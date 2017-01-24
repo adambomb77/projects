@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Project 22</title>
+<style>
+  html {padding:1em; font-size:3em; font-family:Helvetica, Arial, sans-serif;}
+  h1 {margin:0; font-size:1em;}
+  input, button {font-size:1em;}
+  li button {font-size:0.5em;}
+</style>
+</head>
+
+<body>
+  <h1>TODO List</h1>
+  <input id="input" type="text"><button id="add">Add</button>
+  <ul id="list"></ul>
+</body>
+
+<script src="http://code.jquery.com/jquery-2.1.3.min.js"></script>
+<script>
+if(window.localStorage !== undefined){
+  // Check to see if there is an item in local storage with the key of 'todo'
+  // Is so, parse it using JSON.parse, otherwise, set up an empty array
+  var todo = JSON.parse(localStorage.getItem("todo")) || [];
+
+  // Build our list
+  buildList();
+
+  $('#add').on('click', function(){
+    /*
+    1. Get the input value from #add
+    2. Check to see if the value exists in our 'todo' array
+    3. Build the list
+    */
+  });
+
+  $('#list').on('click', 'button', function(){
+    /*
+    1. Get the text value (see #2 in buildList function below)
+    2. Use $.inArray to see if that value exists in the 'todo' array (returns the index number)
+    3. Use "splice" to remove that items from the array if it's there
+    4. Update the localStorage and rebuild the list using the 'todo' array
+    */
+  });
+
+  function updateData(){
+    /*
+    1. Update localStorage with the JSON.stringify(ied) 'todo' array
+    2. Build the List
+    */
+  }
+
+  function buildList(){
+    /*
+    1. Loop through our todo array and add the 'li's to #list
+    2. When creating the li's, add something to the code to allow you to get the actual value out:
+       '<li><span>The actual value</span> <button>Done</button></li>'
+    3. This will allow you to get the "sibling" span of the button and use text() to get the value
+    */
+
+    // Show our latest values
+    console.log(list_vals);
+  }
+
+}
+</script>
+</html>
