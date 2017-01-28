@@ -5,6 +5,44 @@
   <title>Project 9</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link href="project9.css" type="text/css" rel="stylesheet">
+  <style>
+photo {
+    width: 200px;
+    height: 150px;
+    -webkit-transition: -webkit-transform 1s ease-in-out;
+}
+
+a:hover photo {
+    -webkit-box-shadow: 6px 6px 6px rgba(0,0,0,.3);
+}
+
+a:hover #photo1, a:focus #photo1 {
+  -webkit-transform: rotate(180deg);
+}
+
+a:hover #photo2, a:focus #photo2 {
+  -webkit-transform: scale(1.5);
+}
+
+a:hover #photo3, a:focus #photo3 {
+  -webkit-transform: skewX(20deg);
+}
+
+box box1 {
+  color: #ffa500;
+  box-shadow: 0 5px 3px black;
+}
+
+box box2 {
+  transform: rotate(25deg);
+  transform-origin: right top;
+}
+
+
+
+
+
+</style>
 </head>
 <body>
 
