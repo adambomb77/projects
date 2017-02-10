@@ -30,11 +30,7 @@
       left: 50%;
       border-radius: 50px;
       border: 1px solid rgba(0,0,0,0.5);
-      -webkit-animation: moveY 1s linear 0s infinite;
-      -moz-animation: moveY 1s linear 0s infinite;
       animation: moveY 1s linear 0s infinite
-      -webkit-animation-name: ball;
-      -webkit-animation-duration: 1s;
   }
 
   #ball {
@@ -47,49 +43,11 @@
     left: 0;
   }
 
-  @-webkit-keyframes moveY {
-      from { bottom: 0;} to { top: 300px; }
-  }
-
-  @-moz-keyframes moveY {
-      from { bottom: 0;} to { top: 300px; }
-  }
-
-  @-o-keyframes moveY {
-      from { bottom: 0;} to { top: 300px; }
-
   @keyframes moveY {
       from { bottom: 0;} to { top: 300px; }
   }
 
-  @-webkit-keyframes .ball {
-      0% { background-color: red; }
-      20% { background-color: orange;}
-      40% { background-color: yellow;}
-      60% { background-color: green;}
-      80% { background-color: blue;}
-      100% { background-color: purple;}
-  }
-
-  @-moz-keyframes .ball {
-      0% {background-color: red;}
-      20% {background-color: orange;}
-      40% {background-color: yellow;}
-      60% {background-color: green;}
-      80% {background-color: blue;}
-      100% {background-color: purple;}
-  }
-
-  @-o-keyframes .ball {
-      0% {background-color: red;}
-      20% {background-color: orange;}
-      40% {background-color: yellow;}
-      60% {background-color: green;}
-      80% {background-color: blue;}
-      100% {background-color: purple;}
-  }
-
-  @keyframes .ball {
+  @keyframes colors {
       0% {background-color: red;}
       20% {background-color: orange;}
       40% {background-color: yellow;}
