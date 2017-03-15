@@ -17,13 +17,40 @@ blockquote {padding:1em;}
 .site-footer {clear:both; text-align:center; padding:2em 0;}
   .site-footer img {max-width:200px;}
 /*580px*/
-@media only screen and (min-width: 36.250em) {}
+@media only screen and (min-width: 36.250em) {
+  .content .alignleft {margin:0 2em 1em 0; float:left;}
+  .content .alignright {margin:0 0 1em 2em; float:right;}
+}
 
 /*700px*/
-@media only screen and (min-width: 43.75em) {}
+@media only screen and (min-width: 43.75em) {
+  body {background-size: 80% auto;}
+
+  .columnlists .content ul {columns: 2em 2;}
+
+  .wrapper {max-width: 1200px; margin:5em 6%; height:1%;}
+  .skip-links { border:0; clip:rect(0 0 0 0); height: 1px; margin:-1px; overflow: hidden; padding: 0; position: absolute; width: 1px; }
+  .skip-links:active, .skip-links:focus { clip:auto; height:auto; margin: 0; overflow: visible; position: static; width: auto; }
+
+  .site-header {margin:0 0 4em;
+    .site-title {margin:0; padding: 0;}
+}
+
+  .content {float:left; width: 65%; margin: 0 5% 0 0; padding: 0;}
+  .sidebar {float: right; width: 30%; padding:0.75em 0 0 1em; color:#777; border:none; background-color: rgba(255,255,255,0.8);}
+  .site-footer {text-align: left;}
+    .org a {display:inline-block; margin: 0 0.25em;}
+}
 
 /*960px*/
-@media only screen and (min-width: 60em) {}
+@media only screen and (min-width: 60em) {
+  body {background-size: auto auto;}
+  .columnists .content ul {columns:2em 3;}
+  .post-header h2 {font-size: 2.2em;}
+  .post p {max-width:40em;}
+  .social-links li {}
+  .social-links a {padding:0.2rem;}
+}
 
   /*1024px*/
 @media only screen and (min-width: 64em) {}
