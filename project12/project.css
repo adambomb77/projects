@@ -16,3 +16,20 @@ blockquote {padding:1em;}
   blockquote footer {font-style:italic;}
 .site-footer {clear:both; text-align:center; padding:2em 0;}
   .site-footer img {max-width:200px;}
+/*580px*/
+@media only screen and (min-width: 36.250em) {}
+
+/*700px*/
+@media only screen and (min-width: 43.75em) {}
+
+/*960px*/
+@media only screen and (min-width: 60em) {}
+
+  /*1024px*/
+@media only screen and (min-width: 64em) {}
+
+  /*Hi-res*/
+@media
+  only screen and (-webkit-min-device-pixel-ratio:1.5),
+  only screen and (min-device-pixel-ratio: 1.5),
+  only screen and (min-resolution: 144dppx) {}
