@@ -1,5 +1,7 @@
 *, *:before, *:after {-moz-box-sizing:border-box; -webkit-box-sizing:border-box; box-sizing:border-box;}
 body, html {margin:0; padding:0; font-size:100%; line-height:1.4em; font-family:Helvetica, Arial, sans-serif;}
+main {margin-left: 15%;}
+aside {float: top;}
 p {margin:0 0 1em;}
 figure {}
 figcaption {line-height:1.2em;}
@@ -7,20 +9,23 @@ img {max-width:100%;}
 h1, h2, h3, h4, h5, h6 {margin:1em 0 0.25em;
                         color:#b18d03;
                         font-family: Times New Roman, Times, serif;
-                        font: 100%
+                        font: 100%;
                         }
+h2 {text-decoration: underline;}
 header,
 .site-footer {padding:1em; background:#002b5b; color:#fff;}
 header {background:url(images/header-small.jpg) center center no-repeat; background-size:cover;}
 nav {}
   nav ul {margin:0; padding:0; list-style:none;}
-  nav a {display:block; padding:0.5em 1em; color:#333; background-color:#eee; text-decoration:none;}
+  nav a {display:block; padding:0.5em 1em; color:#333; background-color:#eee; text-decoration:none; width: 15%;}
   nav a:hover {background-color:#ddd;}
+
 blockquote {padding:1em;}
   blockquote p {margin:0 0 0.4em; color:#002b5b; font-size:1.8em; line-height:1.2em; font-family:"Times New Roman", Times, serif;}
   blockquote footer {font-style:italic;}
-.site-footer {clear:both; text-align:center; padding:2em 0;}
-  .site-footer img {max-width:200px;}
+.site-footer {clear:both; text-align: inherit; padding:20px;}
+  .site-footer img {max-width:200px; float: right; padding-bottom: 5em;}
+
 
 
 
@@ -33,7 +38,8 @@ blockquote {padding:1em;}
 
 
 @media only screen and (min-width: 900px) {
-  header {background-image:url(images/header-large.jpg);}
+  header {background-image:url(images/header-large.jpg);
+          height: 400px;}
 
   figure {float:right; width:300px;}
 
