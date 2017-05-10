@@ -16,13 +16,13 @@ header {background:url(images/header-small.jpg) center center no-repeat; backgro
 header h1 {}
 header p {display: block; background-color: white; color: blue; padding: 10px;
           text-align: inherit;
+          text-decoration: none;
           position: inherit;
           float: right;
           margin: 2px;
           width: 50px;
           height: 30px;
           overflow: hidden;
-          text-decoration: none;
         }
 nav {}
   nav ul {margin:0; padding:0; list-style:none;}
