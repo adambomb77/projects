@@ -60,7 +60,8 @@ blockquote {padding:1em;}
   .leadership {float: left; width: 33%; padding:2em;}
   .page-title {border-bottom: 3px solid #b18d03;}
   header h1 {font-size: 5em; color: #ffffff;}
-  header p {;}
+  header a {display: none;}
+
 
 }
 
