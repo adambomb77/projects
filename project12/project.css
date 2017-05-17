@@ -17,12 +17,12 @@ header h1 {}
 header a {display: block; background-color: white; color: blue; padding: 10px;
           text-align: inherit;
           text-decoration: none;
-          position: inherit;
-          float: right;
+          position: absolute;
+          top: 0;
+          right: 0;
           margin: 20px;
-          width: 50px;
-          height: 30px;
           overflow: hidden;
+
         }
 nav {}
   nav ul {margin:0; padding:0; list-style:none;}
@@ -54,7 +54,7 @@ blockquote {padding:1em;}
   header {background-image:url(images/header-large.jpg);
           height: 400px;}
 
-  figure {float:right; width:300px;}
+  figure {float:right; width:auto; margin: 0 0 1em;}
   aside {float:left; width: 15%;}
   main {float: right; width: 85%;}
   .leadership {float: left; width: 33%; padding:2em;}
